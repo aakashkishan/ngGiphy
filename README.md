@@ -1,15 +1,14 @@
 # NgGiphy
 > A Giphy Search Experiment using Giphy API and Angular2.
 
+##ScreenShot
+![GiphySearchScreenshot](images/Screenshot.PNG)
+![Giphy](http://media3.giphy.com/media/3o7TKMt1VVNkHV2PaE/giphy.gif)
+
 ## Index
-  * [Demo](#demo)
   * [Required Sources](#required_sources)
   * [Installation](#installation)
   * [License](#license)
-
-##Demo <a name="demo"></a>
-![Screenshot](images/Screenshot.PNG)
-![Giphy](http://media3.giphy.com/media/3o7TKMt1VVNkHV2PaE/giphy.gif)
 
 ##Required Sources <a name="required_sources"></a>
 * Giphy API - [GiphyAPI](http://api.giphy.com/v1/gifs/search?api_key=dc6zaTOxFJmzC&q=)
