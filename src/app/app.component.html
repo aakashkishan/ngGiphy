@@ -1,3 +1,16 @@
+
 <h1>
   {{title}}
 </h1>
+
+<!--Angular binds the input to giphy attribute-->
+<input name="search" #giphy>
+
+<!--The bounded giphy attribute is passed to the function to be executed onClick-->
+<button (click)="giphySearch(giphy)">GIPHY</button>
+
+<br>
+
+<div *ngFor="let gif of gifs">
+  <img src="{{gif.images.original.url}}">
+</div>
