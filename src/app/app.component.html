@@ -1,21 +1,21 @@
+<div class="container">
+  <h1 class="title">
+    ngGiphy
+  </h1>
 
-<h1>
-  ngGiphy
-</h1>
+  <!--Angular binds the input to giphy attribute-->
+  <input class="input" #giphy>
 
-<!--Angular binds the input to giphy attribute-->
-<input #giphy>
+  <!--The bounded giphy attribute is passed to the function to be executed onClick-->
+  <button class="btn btn-success" (click)="giphySearch(giphy)">GIPHY</button>
 
-<!--The bounded giphy attribute is passed to the function to be executed onClick-->
-<button (click)="giphySearch(giphy)">GIPHY</button>
+  <br />
 
-<br />
-
-<ul>
-  <li *ngFor="let g of gifs">
-    <img src="{{g.images.original.url}}">
-  </li>
-</ul>
-
+  <ul>
+    <li *ngFor="let g of gifs">
+      <img src="{{g.images.original.url}}">
+    </li>
+  </ul>
+</div>
 
 

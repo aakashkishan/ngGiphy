@@ -1,0 +1,18 @@
+.title {
+    font-family: 'Oswald';
+    color: #449D44;
+}
+
+.input {
+    height: 35px;
+    border: 3px;
+    border-color: #3F4347;
+    border-radius: 5px;
+    color: #449D44;
+    background-color: #3F4347;
+}
+
+.btn {
+    color: #3F4347 !important;
+    font-family: 'Oswald';
+}
