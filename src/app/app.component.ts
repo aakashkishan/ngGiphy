@@ -10,8 +10,6 @@ import { Http, Response } from '@angular/http';
 export class AppComponent {
 
   // Declare and Initialize the required variables.
-  // Title of the Project.
-  title = 'ngGiphy';
 
   // The Search is to be appended to this absolute URL / Link.
   private link = 'http://api.giphy.com/v1/gifs/search?api_key=dc6zaTOxFJmzC&q=';
@@ -21,6 +19,7 @@ export class AppComponent {
 
   // Declare an array gifs to store the obtained gifs after the Search.
   gifs = [];
+  gif = [];
 
   // Constructor
   constructor(http: Http) {
@@ -41,8 +40,14 @@ export class AppComponent {
               // Initialize the gifs array.
               this.gifs = response.json().data;
 
-              // Log the response.
-              console.log(this.gifs);
+              for(var i = 0; i < this.gifs.length; i++) {
+
+                this.gif = this.gifs[i].images.fixed_height.url;
+
+                // Log the response.
+                console.log(this.gifs[i].images.original.url);
+
+              }
 
             });
 
